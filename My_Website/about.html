@@ -214,9 +214,9 @@ body, html {
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Palmdale, CA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (661) 272-9770<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: palmdaleinfo@mulliganfun.com<br>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
       <form action="/action_page.php" target="_blank">
@@ -255,20 +255,20 @@ body, html {
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(34.6903, 118.1713);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  var map=new google.maps.Map(document.getElementById('Map'),mapOptions);
 
   var marker = new google.maps.Marker({
     position: myCenter,
   });
   marker.setMap(map);
+  
 }
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -298,7 +298,7 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdJpsPLnUphOX6iK6hEYg-xhqO2i3WFBA&callback=myMap"></script>
 
 
 </body>
